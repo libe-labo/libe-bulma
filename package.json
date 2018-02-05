@@ -1,0 +1,22 @@
+{
+  "name": "libe-bulma",
+  "version": "0.0.1",
+  "description": "Générateur de style pour Libé Sixplus basé sur Bulma",
+  "main": "six-plus.sass",
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/six-plus.css css/six-plus.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded --source-map true six-plus.sass css/six-plus.css"
+  },
+  "author": "TomCourant",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "bulma": "^0.6.0",
+    "bulmaswatch": "^0.5.2",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.1",
+    "rimraf": "^2.6.2"
+  }
+}

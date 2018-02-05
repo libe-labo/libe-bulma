@@ -1,0 +1,36 @@
+@charset "utf-8"
+/*! Libé Six Plus style based on bulma.io | MIT License | github.com/jgthms/bulma */
+
+// Import Libé fonts
+@import "https://statics.liberation.fr/newsite/css/fonts.css"
+
+// Import Bulma initial variables
+@import "node_modules/bulma/sass/utilities/initial-variables.sass"
+@import "node_modules/bulma/sass/utilities/functions"
+
+// Set Sixplus custom initial variables
+$libe-pink: #e61e49
+$libe-pink-invert: findColorInvert($libe-pink) !default
+$family-sans-serif: "syntheselibeweb", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+
+// Import Bulma derived variables
+// @import "node_modules/bulma/sass/utilities/derived-variables.sass"
+
+// Set Sixplus custom derived variables
+$family-primary: $family-sans-serif
+$red: $libe-pink
+$primary: $libe-pink
+$primary-invert: $libe-pink-invert
+$link: $libe-pink !default
+$link-invert: $libe-pink-invert !default
+$link-visited: $libe-pink !default
+$link-focus-border: $libe-pink !default
+
+// Import Libé fonts
+@import "sass/libe-fonts.sass"
+
+// Import Bulma
+@import "sass/bulma-custom.sass"
+
+// Overrides form elements based on material design
+@import "sass/form.sass"
