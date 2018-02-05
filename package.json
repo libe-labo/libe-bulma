@@ -9,7 +9,7 @@
     "build-clean": "rimraf css",
     "build-sass": "node-sass --output-style expanded --source-map true six-plus.sass css/six-plus.css"
   },
-  "author": "TomCourant",
+  "author": "TomCourant <tomcourant@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.2.5",
